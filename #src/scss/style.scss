@@ -1,0 +1,48 @@
+@import "nullstyle.scss";
+
+@mixin font($font_name, $file_name, $weight, $style){
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url('../fonts/#{$file_name}.woff') format('woff'), url('../fonts/#{$file_name}.woff2') format('woff2');
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "fonts.scss";
+@import "fontSize.scss";
+@import "colors.scss";
+@import "ibg.scss";
+@import "btn.scss";
+@import "slick.scss";
+@import "tabs.scss";
+@import "tarif.scss";
+@import "form.scss";
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	&.lock{
+		overflow: hidden;
+	}
+}
+@import "container.scss";
+@import "full-screen.scss";
+@import "header.scss";
+@import "intro.scss";
+@import "main-header.scss";
+
+.content{
+	flex: 1 1 auto;
+}
+
+@import "about.scss";
+@import "services.scss";
+@import "work.scss";
+@import "plan.scss";
+@import "team-member.scss";
+@import "blog.scss";
+@import "contact.scss";
+@import "footer.scss";

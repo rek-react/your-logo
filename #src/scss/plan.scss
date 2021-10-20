@@ -1,0 +1,35 @@
+.plan {
+	padding: 85px 0;
+	background-color: #f0f1f1;
+	@media (max-width: 767px){
+		padding: 60px 0;
+	}
+	@media (max-width: 767px){
+		padding: 30px 0;
+	}
+	
+	&__body {
+		display: flex;
+		margin: 0 -15px;
+		flex-wrap: wrap;
+	}
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 0 15px;
+		margin-bottom: 40px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		@media (max-width: 610px){
+			flex: 0 1 100%;
+		}
+	}
+	&__item {
+		background-color: $white;
+		text-align: center;
+		transition: transform 0.2s ease;
+		&:hover{
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+	}
+}

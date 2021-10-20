@@ -1,0 +1,10 @@
+.footer{
+	background-color: #000; 
+	text-align: center;
+	&__copyright{
+		padding: 22px 0;
+		@include fontSize(20, 18);
+		font-weight: 700;
+		color: $black;
+	}
+}

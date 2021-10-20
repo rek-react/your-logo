@@ -1,0 +1,86 @@
+.tarif {
+	&__header {
+		color: $white;
+		position: relative;
+		padding: 43px 15px 65px;
+		overflow: hidden;
+		&::before{
+			content: "";
+			position:absolute;
+			left: -10px;
+			top: -50px;
+			width: 200%;
+			height: 100%;
+			background-color: #3949ab;
+			transform: rotate(-5deg);
+		}
+	}
+	&__name, &__price{
+		z-index: 1;
+		position: relative;
+	}
+	&__name {
+		font-size: 25px;
+	}
+	&__price {
+		margin-top: 35px;
+		font-size: 50px;
+		sup {
+			@include fontSize(25, 20);
+			margin-right: 5px;
+		}
+		span{
+			@include fontSize(17, 15);
+			margin-left: 7px;
+		}
+		@media (max-width: 767px){
+			font-size: 30px;
+			margin-top: 20px;
+		}
+	}
+	&__info {
+		max-width: 200px;
+		margin: 0 auto;
+		padding: 50px 15px 60px;
+		
+		li{
+			font-size: 17px;
+			margin-bottom: 35px;
+			padding-bottom: 10px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			border-bottom: 1px solid #bfbfbf;
+		}
+		@media (max-width: 767px) {
+			padding: 10px 15px 40px;
+			li{
+				margin-bottom: 20px;
+				padding-bottom: 7px;
+				font-size: 15px;
+			}
+		}
+		@media (max-width: 610px){
+			max-width: 400px;
+			padding: 10px 15px 30px;
+			li{
+				font-size: 20px;
+				padding-bottom: 15px;
+			}
+		}
+	}
+	&__btn {
+		font-size: 20px;
+		padding: 20px 0;
+		width: 100%;
+		@media (max-width: 767px){
+			padding: 10px;
+			font-size: 15px;
+		}
+		@media (max-width: 610px){
+			font-size: 20px;
+			padding: 20px;
+			margin-top: 20px;
+		}
+	}
+}
