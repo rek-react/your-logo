@@ -1029,11 +1029,11 @@ body.lock {
 }
 
 .blog__date::before {
-  background: url("/img/blog/icon/01.png") 0 0 no-repeat;
+  background: url("../img/blog/icon/01.png") 0 0 no-repeat;
 }
 
 .blog__name::before {
-  background: url("/img/blog/icon/02.png") 0 0 no-repeat;
+  background: url("../img/blog/icon/02.png") 0 0 no-repeat;
 }
 
 .blog__text {

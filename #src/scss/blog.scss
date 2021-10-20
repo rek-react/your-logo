@@ -92,7 +92,7 @@
 	&__date {
 		margin-right: 40px;
 		&::before{
-			background: url('/img/blog/icon/01.png') 0 0 no-repeat;
+			background: url('../img/blog/icon/01.png') 0 0 no-repeat;
 		}
 		@media (max-width:767px){
 			margin: 0 0 15px 0;
@@ -103,7 +103,7 @@
 	}
 	&__name {
 		&::before{
-			background: url('/img/blog/icon/02.png') 0 0 no-repeat;
+			background: url('../img/blog/icon/02.png') 0 0 no-repeat;
 		}
 	}
 	&__text {
