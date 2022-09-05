@@ -1,0 +1,40 @@
+@import "nullstyle.scss";
+
+@import "fonts.scss";
+@import "fontSize.scss";
+@import "colors.scss";
+@import "ibg.scss";
+@import "btn.scss";
+@import "slick.scss";
+@import "tabs.scss";
+@import "tarif.scss";
+@import "form.scss";
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+@import "container.scss";
+@import "full-screen.scss";
+@import "header.scss";
+@import "intro.scss";
+@import "main-header.scss";
+
+.content {
+	flex: 1 1 auto;
+}
+
+@import "about.scss";
+@import "services.scss";
+@import "work.scss";
+@import "plan.scss";
+@import "team-member.scss";
+@import "blog.scss";
+@import "contact.scss";
+@import "footer.scss";

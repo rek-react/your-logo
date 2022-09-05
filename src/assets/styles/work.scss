@@ -1,0 +1,111 @@
+.work {
+	padding:130px 0;
+	@media (max-width:767px) {
+		padding:50px 0;
+	}
+	&__header {
+	}
+	
+	&__tabs{
+		text-align: center;
+	}
+	&__tab{
+		margin-right: 20px;
+		&:last-child{
+			margin-right: 0;
+		}
+		@media (max-width:767px) {
+			margin-right: 7px;
+		}
+		@media (max-width:525px) {
+			margin: 0 auto 12px ;
+			&:last-child{
+				margin-right: auto;
+			}
+		}
+	}
+	&__body {
+		margin: 125px -15px 0 -15px;
+		display: flex;
+		flex-wrap: wrap;
+		@media (max-width:767px){
+			margin-top: 60px;
+		}
+		@media (max-width:525px){
+			margin-top: 40px;
+		}
+	}
+	&__column {
+		padding: 0 15px;
+		margin-bottom: 30px;
+		flex: 0 1 33.333%;
+		display: none;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+		@media (max-width:767px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width:525px){
+			flex: 0 1 100%;
+		}
+		&.active{
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+		}
+	}
+	&__cart {
+		cursor: pointer;
+		position: relative;
+		background-color: #000;
+		&:hover{
+			.work__image{
+				opacity: 0.35;
+			}
+			.work__info{
+				opacity: 1;
+			}
+		}
+		
+	}
+	&__image {
+		height: 100%;
+		width: 100%;
+		transition: opacity 0.3s ease;
+	}
+	&__info {
+		transition: opacity 0.3s ease;
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		left: 0;
+		bottom: 50%;
+		color: $white;
+	}
+	&__name {
+		@include fontSize(20, 25);
+		margin-bottom: 8px;
+	}
+	&__prof{
+		@include fontSize(15, 20);
+	}
+	&__btns{
+		text-align: center;
+	}
+	&__btn {
+		margin: 95px 0 0 0;
+		text-transform: uppercase;
+		border: 2px solid #00897b;
+		&:hover{
+			border-color:transparent;
+			background-color: #00897b;
+			color: $white;
+		}
+		@media (max-width:767px){
+			margin-top: 30px;
+		}
+	}
+}
